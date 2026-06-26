@@ -34,6 +34,8 @@ class View(ft.UserControl):
         self.dd_localization = ft.Dropdown(label="Localization",
                                hint_text="Selezionare un tipo di localization.", width=300)
 
+        self._controller.fillDDLocalization()
+
         self.btn_graph = ft.ElevatedButton(text="Crea Grafo",
                                            tooltip="Crea il grafo",
                                            on_click=self._controller.handle_graph)
